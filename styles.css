@@ -1,7 +1,21 @@
-img {
-    width: 300px;
+
+body {
+    font-family: 'Epilogue', sans-serif;
 }
 
-h1 {
-    color: lightcoral;
+.page_header {
+    color:blue;
+    /* width: 500px; */
+    text-align: center;
+    margin: 0 auto;
+    background-color: aqua;
+    padding: 30px 0;
+}
+
+.page_header h1 {
+    color:rgb(125, 9, 91);
+    width: 500px;
+    /* margin: -20px 0 0 -20px; */
+    margin: 0 auto;
+    background-color: burlywood;
 }
