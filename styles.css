@@ -1,6 +1,8 @@
 
 body {
     font-family: 'Epilogue', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 .entry h3 {
