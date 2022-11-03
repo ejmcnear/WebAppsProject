@@ -32,6 +32,13 @@ html{
     padding: 25px 0;
 }
 
+.entry button {
+    padding: 7px;
+    border-radius: 8%;
+    margin-top: 5px;
+    float: right;
+}
+
 /* .entry h3 {
     text-decoration-line: underline;
 } */
@@ -87,11 +94,14 @@ html{
     flex-direction: column;
 }
 .popular_posts li {
-    border-bottom: 1px dashed blueviolet;
-    padding: 50px 0;
+    /* flex: 1 1 100px; */
+    /* border-bottom: 1px dashed blueviolet; */
+    overflow: hidden;
+    /* padding-bottom: 40px; */
     list-style-type: none;
 }
 .popular_posts h3 {
+    flex: 0 1 60px;
     font-size: 32px;
     text-align: center;
     margin-bottom: 5px;
@@ -103,8 +113,9 @@ html{
 }
 
 .popular_posts img {
-    width: 100px;
+    width: 120px;
     margin-right: 20px;
+    padding: 10px;
     float: left;
 }
 
