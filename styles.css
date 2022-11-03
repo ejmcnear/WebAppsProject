@@ -5,9 +5,35 @@ body {
     line-height: 1.5;
 }
 
-.entry h3 {
-    text-decoration-line: underline;
+html{
+    box-sizing: border-box;
 }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    grid-auto-rows: 1fr;
+    gap: 20px;
+}
+
+.entry {
+    grid-column: 1;
+    overflow: hidden;
+    border-bottom: 1px dashed blueviolet;
+    padding: 25px 0;
+}
+
+.entry img {
+    float: left;
+    margin-right: 20px;
+}
+/* .entry h3 {
+    text-decoration-line: underline;
+} */
 
 .navigation_bar a {
     text-decoration-line: none;
