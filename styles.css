@@ -5,6 +5,8 @@ body {
     line-height: 1.5;
 }
 
+
+
 html{
     box-sizing: border-box;
 }
@@ -15,6 +17,9 @@ html{
 
 .container {
     display: grid;
+    max-width: 1500px;
+    width: 85%;
+    margin: 0 auto;
     grid-template-columns: 2.5fr 1.5fr;
     grid-auto-rows: 1fr;
     gap: 20px;
@@ -27,32 +32,60 @@ html{
     padding: 25px 0;
 }
 
-.entry img {
-    float: left;
-    margin-right: 20px;
-}
 /* .entry h3 {
     text-decoration-line: underline;
 } */
 
+.navigation_bar {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
 .navigation_bar a {
     text-decoration-line: none;
+    padding: 20px;
+}
+
+.navigation_bar a:hover {
+    text-decoration-line: underline;
 }
 
 .page_header {
+    background-image: url(../WebAppsProject/images/headphones-on-keyboard.jpg);
+    background-size: cover;
+    background-position: center left;
+    height: 500px;
+    min-width: 85%;
+
+}
+
+.page_header_text {
+    
     color:blue;
-    /* width: 500px; */
+    /* width: 500px;
     text-align: center;
     margin: 0 auto;
     background-color: aqua;
-    padding: 30px 0;
+    padding: 30px 0; */
 }
 
 .page_header h1 {
-    color:rgb(125, 9, 91);
-    width: 500px;
+    color:rgb(215, 19, 19);
+    /* width: 500px; */
     /* margin: -20px 0 0 -20px; */
-    margin: 0 auto;
-    background-color: burlywood;
+    position: absolute;
+    bottom: auto;
+    right: 0;
+    /* text-align: right; */
+    /* background-color: burlywood; */
 }
 
+/*------------Responsive-----------*/
+@media screen and (min-width:750px) {
+    .entry img {
+        float: left;
+        margin-right: 20px;
+    }
+}
